@@ -6,7 +6,7 @@ import pandas as pd
 driver = webdriver.Chrome('C:\Program Files\Google\Chrome\Application\chromedriver')
 
 for i in range(24):
-    driver.get('https://www.99acres.com/property-in-indore-ffid-page-'+str(n))
+    driver.get('https://www.99acres.com/property-in-indore-ffid-page-'+str(i))
 
     content = driver.page_source
     soup = BeautifulSoup(content)
